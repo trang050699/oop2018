@@ -8,16 +8,18 @@ public class Fraction {
     
     public static void main(String[] args){
         Fraction phanso1 = new Fraction(1,5);
+        Fraction phanso2 = new Fraction(1,3);
         
         
-        phanso1.add(phanso2);
-        phanso1.subtract(phanso2);
-        phanso1.multiply(phanso2);
-        phanso1.divide(phanso2);
-        System.out.println("cong hai phan so 1/5 + 1/3 = " + phansotong.Numberator+ "/"+ phansotong.Denominator);
-        System.out.println("tru hai phan so 1/5 - 1/3 = " + phansohieu.Numberator+ "/"+ phansohieu.Denominator);
-        System.out.println("nhan hai phan so 1/5 * 1/3 = " + phansotich.Numberator+ "/"+ phansotich.Denominator);
-        System.out.println("chia hai phan so 1/5 : 1/3 = " + phansothuong.Numberator+ "/"+ phansothuong.Denominator);
+        Fraction tong = phanso1.add(phanso2);
+        Fraction hieu = phanso1.subtract(phanso2);
+        Fraction tich = phanso1.multiply(phanso2);
+        Fraction thuong = phanso1.divide(phanso2);
+        
+        System.out.println("cong hai phan so 1/5 + 1/3 = " + tong.Numberator+ "/"+ tong.Denominator);
+        System.out.println("tru hai phan so 1/5 - 1/3 = " + hieu.Numberator+ "/"+ hieu.Denominator);
+        System.out.println("nhan hai phan so 1/5 * 1/3 = " + tich.Numberator+ "/"+ tich.Denominator);
+        System.out.println("chia hai phan so 1/5 : 1/3 = " + thuong.Numberator+ "/"+ thuong.Denominator);
         
         
          
@@ -66,16 +68,16 @@ public class Fraction {
 
     public Fraction multiply(Fraction other) {
         // TODO: Phương thức nhân hai phân số (this và other), trả về đối tượng Fraction mới
-        int tu = this.getDenominator() * other.getDenominator();
-        int mau = this.getNumberator() * other.getDenominator();
+        int tu = this.getNumberator() * other.getNumberator();
+        int mau = this.getDenominator() * other.getDenominator();
         Fraction phansotich = new Fraction(tu,mau);
         return phansotich;
     }
 
     public Fraction divide(Fraction other) {
         // TODO: Phương thức chia hai phân số (this và other), trả về đối tượng Fraction mới
-        int tu = this.getDenominator() * other.getNumberator();
-        int mau = this.getNumberator() * other.getDenominator();
+        int mau = this.getDenominator() * other.getNumberator();
+        int tu = this.getNumberator() * other.getDenominator();
         Fraction phansothuong = new Fraction(tu,mau);
         return phansothuong;
     }
