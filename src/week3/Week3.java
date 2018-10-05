@@ -12,7 +12,7 @@ public class Week3 {
         // TODO: Tìm giá trị nhỏ nhất của của một mảng số nguyên (kích thước mảng <= 100 phần t
         int i;
         int x = array[0];
-        for( i=0; i<100; i++){
+        for( i=0; i<array.length; i++){
             if(x > array[i]) x = array[i];
         }
         return x;
