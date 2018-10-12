@@ -15,7 +15,8 @@ public class Week4Task {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Circle circle0 = new Circle(1.0);
+        Circle circle0 = new Circle();
+        Rectangle rectangle0 = new Rectangle();
         
     }
     
