@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package week4.task;
+package week4.task2;
 
 /**
  *
