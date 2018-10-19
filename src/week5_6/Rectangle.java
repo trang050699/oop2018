@@ -58,6 +58,6 @@ public class Rectangle extends Shape{
         return width;
     }
     public String toString(){
-        return "Length" + 
+        return "Length" + Length()+ "/n" + "Width" + Width();
     }
 }
