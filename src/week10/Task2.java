@@ -9,7 +9,7 @@ public class Task2 {
         Random s = new Random();
         int[] a = new int[100];
         for(int i=0;i<100;i++){
-            a[i] = s.nextInt();
+            a[i] = s.nextInt(100);
         }
         System.out.println("Day so ban dau:");
         for(int i=0; i<100; i++){
