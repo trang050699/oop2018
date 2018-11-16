@@ -16,8 +16,8 @@ public class Task2 {
             System.out.print(a[i]+" ");
         }
         int x;
-        for(int i=0;i<100;i++){
-            for(int y=0;y<100-i;y++){
+        for(int i=0;i<99;i++){
+            for(int y=0;y<99-i;y++){
                 if(a[y]>a[y+1]){
                     x=a[y];
                     a[y]=a[y+1];
