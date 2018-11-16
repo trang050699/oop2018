@@ -25,7 +25,7 @@ public class Task2 {
                 }
             }
         }
-        System.out.println("Day so sau khi sap xep:");
+        System.out.println("\nDay so sau khi sap xep:");
         for(int i=0;i<100;i++){
             System.out.print(a[i]+" ");
         }
